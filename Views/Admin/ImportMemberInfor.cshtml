@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <div class="text-center">
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1 class="display-4">请将准备好的数据放入指定位置的“.txt”文件后，按导入键开始</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <form action="@Url.Action("ImportMemInfJob","AdminJob")">
+            <input type="submit" value="导入" />
+        </form>
+    </div>
+
+</body>
+
+</html>

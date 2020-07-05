@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <div class="text-center">
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1 class="display-4">请输入需要统计消费数据的会员的ID</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <form method="post" action="@Url.Action("MemberStatistics","AdminJob")">
+            会员ID：<input type="text" name="memberid" /><br />
+            <input type="submit" value="提交" />
+        </form>
+    </div>
+
+</body>
+
+</html>

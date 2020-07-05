@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+    <head>
+        <link href="~/css/homepage.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="text-center">
+            <h1>&nbsp;</h1>
+            <h1>&nbsp;</h1>
+            <h1>&nbsp;</h1>
+            <h1>&nbsp;</h1>
+            <h1 class="display-4">请选择需要前往的子系统</h1>
+            <h1>&nbsp;</h1>
+            <h1>&nbsp;</h1>
+            <button onclick="JumpUser()">会员子系统</button>
+            <button onclick="JumpAdmin()">管理员子系统</button>
+        </div>
+    </body>
+</html>
+
+@section HomeScript
+{ 
+    <script type="text/javascript">
+
+        function JumpUser() {
+            var url1 = '@Url.Action("Index", "Member")';
+            location.href = url1;
+        }
+
+        function JumpAdmin() {
+            var url2 = '@Url.Action("Index", "Admin")';
+            location.href = url2;
+        }
+
+    </script>
+}

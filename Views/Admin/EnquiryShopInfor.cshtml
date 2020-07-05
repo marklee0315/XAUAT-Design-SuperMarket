@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <div class="text-center">
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1 class="display-4">请输入要查询的会员号，点击查询键开始</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <form method="post" action="@Url.Action("EnquiryShopJob","AdminJob")">
+            会员编号：<input type="text" name="memberid" /><br />
+            <input type="submit" value="查询" />
+        </form>
+    </div>
+
+</body>
+
+</html>

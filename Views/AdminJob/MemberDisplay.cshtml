@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+@{
+    var members = Model as List<Member>;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <div class="box">
+
+        <div class="box-header">
+            <div class="box-name">
+                <i class="fa fa-table"></i>
+                <span>会员信息表</span>
+            </div>
+            <div class="box-icons">
+                <a class="collapse-link">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+                <a class="expand-link">
+                    <i class="fa fa-expand"></i>
+                </a>
+                <a class="close-link">
+                    <i class="fa fa-times"></i>
+                </a>
+            </div>
+            <div class="no-move"></div>
+        </div>
+
+        <div class="box-content">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>会员ID</th>
+                        <th>会员姓名</th>
+                        <th>会员手机号</th>
+                        <th>当前会员账户积分</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var i = 0; i < members.Count; i++)
+                    {
+                        <tr>
+                            <td>@members[i].Id</td>
+                            <td>@members[i].Name</td>
+                            <td>@members[i].Phone</td>
+                            <td>@members[i].Credit</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <div class="text-center">
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1 class="display-4">请按下方文本框前提示输入信息，点击提交键保存</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <form method="post" action="@Url.Action("AmendInfor","AdminJob")">
+            修改前姓名：<input type="text" name="name" />修改后姓名：<input type="text" name="nameafter" /><br />
+            修改前电话：<input type="text" name="phone" />修改后电话：<input type="text" name="phoneafter" /><br />
+            修改前密码：<input type="text" name="password" />修改后密码：<input type="text" name="passwordafter" /><br />
+            <input type="submit" value="提交" />
+        </form>
+    </div>
+
+</body>
+
+</html>

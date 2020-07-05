@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <div class="text-center">
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1 class="display-4">请输入需要删除的会员的手机尾号，点击提交键保存</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <form method="post" action="@Url.Action("DeleteByOneString","AdminJob")">
+            电话：<input type="text" name="phonetail" /><br />
+            <input type="submit" value="提交" />
+        </form>
+    </div>
+
+</body>
+
+</html>

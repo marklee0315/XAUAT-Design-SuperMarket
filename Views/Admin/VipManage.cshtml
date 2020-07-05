@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <div class="text-center">
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1 class="display-4">请输入需要修改的会员优惠等级，点击提交键保存</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <form method="post" action="@Url.Action("VipManageJob","AdminJob")">
+            会员等级ID号：<input type="text" name="viplevelid" /><br />
+            修改后的会员优惠等级：<input type="text" name="levelrateafter" /><br />
+            <input type="submit" value="提交" />
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <div class="text-center">
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <h1 class="display-4">请按下方文本框前提示输入信息，修改购物信息，点击提交键保存</h1>
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
+        <form method="post" action="@Url.Action("AmendShopJob","AdminJob")">
+            会员ID：<input type="text" name="memberid" /><br />
+            修改货物id：<input type="text" name="goodid" /><br />
+            修改数量：<input type="text" name="quantity" /><br />
+            <input type="submit" value="提交" />
+        </form>
+    </div>
+
+</body>
+
+</html>
